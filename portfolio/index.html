@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elin Michielsen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: rgb(27, 27, 66);
+            margin: 0;
+            padding: 0;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab-button {
+            background: #ddd;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 5px;
+            border-radius: 5px;
+        }
+        .tab-button.active {
+            background: #555;
+            color: white;
+        }
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .portfolio-item{
+            position: relative;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+       h4{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-10%);
+        text-align: center;
+        color: black;
+        background-color: aliceblue;
+        width: 50%;
+        margin: auto 0;
+        visibility: hidden;
+       }
+       .portfolio-item:hover h4{
+        visibility: visible;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-title">Elin Michielsen</div>
+        <nav>
+            <ul>
+                <li><a href="about me.html">about and contact </a></li>
+               
+            
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="work" class="portfolio-grid">
+        <div class="portfolio-item">
+            <a href="sketchbook.html">
+            <img src="images/Doodle projectwerk .jpg" alt="Project 1"> 
+            <h4>sketchbook</h4>
+        </a>    
+        </div> 
+
+        <div class="portfolio-item">
+            <a href="drawing stories.html">
+            <img src="images/scans drawing stories  kopie.png" alt="Project 2">
+             <h4>drawing stories</h4>
+         </a>
+        </div>
+
+        <div class="portfolio-item">
+            <a href="printmaking.html">
+            <img src="images/Vuurtoren .jpg" alt="Project 4">
+            <h4>printmaking</h4>
+        </a>
+    </div>
+ <div class="portfolio-item">
+            <a href="wild.html">
+            <img src="images/scans wind  kopie.jpeg" alt="Project 4">
+            <h4>wild</h4>
+        </a>
+</div>
+   <div class="portfolio-item">
+        <a href="digital work.html">
+        <img src="images/taart TTT.jpg" alt="Project 4">
+        <h4>digital work</h4>
+    </a>
+    </div>
+  <div class="portfolio-item">
+        <a href="drawing in relation to the studio.html">
+        <img src="images/eerste_scans_tekenen_in_relatie_tot_de_studio_1 kopie.png" alt="Project 4">
+        <h4>drawing in relation to the studio</h4>
+    </a>
+    </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elin Michielsen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: rgb(27, 27, 66);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        h1{
+            text-align: center;
+        }
+         .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .portfolio-item img:hover {
+      transform: scale(1.01);
+    }
+
+    /* Lightbox Styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h5{
+      text-align: center;
+      font-weight: lighter;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-title">Elin Michielsen</div>
+        <nav>
+            <ul>
+                <li><a href="portfolio2.html">homepage</a></li>
+                <li><a href="about me.html">about and contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+     
+    <h1>wild</h1>
+    <h5>My Bachelor's Assignment: "What Does the Word 'Wild' Mean to Us?" This project began with a question: what does the word wild mean to us, and what does it mean to me personally? For me, it immediately brings to mind the weather—especially the wind. I think of the sound it makes, the force it carries, and the essential role it plays in nature and on our planet. Throughout this semester, I explored my personal connection to the wind. I experimented with how it feels, what it evokes in me, and the associations it stirs. These drawings are the result of that exploration—visual expressions of what the wind means to me. </h5>
+    <section id="work" class="portfolio-grid">
+       <section id="work" class="portfolio-grid">
+     <div class="portfolio-item"><a href="#img1"><img src="images/wind beelden_2 kopie.png" alt="Project 9"></a></div>
+     <div class="portfolio-item"><a href="#img2"><img src="images/scans wind beelden _9 kopie.png" alt="Project 5"></a></div>
+     <div class="portfolio-item"><a href="#img3"><img src="images/scans wind beelden _60 kopie.jpeg" alt="Project 5"></a></div>
+    <div class="portfolio-item"><a href="#img4"><img src="images/scans wind  kopie.jpeg" alt="Project 1"></a></div>
+    <div class="portfolio-item"><a href="#img5"><img src="images/scans wind beelden _6 kopie.jpeg" alt="Project 3"></a></div>
+     <div class="portfolio-item"><a href="#img6"><img src="images/scans wind beelden _19 kopie.jpeg" alt="Project 5"></a></div>
+    <div class="portfolio-item"><a href="#img7"><img src="images/scans wind beelden _7 kopie.jpeg" alt="Project 4"></a></div>
+    <div class="portfolio-item"><a href="#img8"><img src="images/scans wind _1 kopie.jpeg" alt="Project 2"></a></div>
+    <div class="portfolio-item"><a href="#img9"><img src="images/scans wind beelden _13.jpg" alt="Project 8"></a></div>
+
+
+  </section>
+
+ <div id="img1" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/wind beelden_2 kopie.png" alt=""></div>
+  <div id="img2" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/scans wind beelden _9 kopie.png" alt=""></div>
+  <div id="img3" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/scans wind beelden _60 kopie.jpeg" alt=""></div>
+  <div id="img4" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/scans wind  kopie.jpeg" alt=""></div>
+  <div id="img5" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/scans wind beelden _6 kopie.jpeg" alt=""></div>
+  <div id="img6" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/scans wind beelden _19 kopie.jpeg" alt=""></div>
+  <div id="img7" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/scans wind beelden _7 kopie.jpeg" alt=""></div>
+<div id="img8" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/scans wind _1 kopie.jpeg" alt=""></div>
+<div id="img9" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/scans wind beelden _13.jpg" alt=""></div>
+
+
+   
+    
+</body>
+</html>

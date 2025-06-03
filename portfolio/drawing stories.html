@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elin Michielsen</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: rgb(27, 27, 66);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        h2, h5 {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .image-stack {
+            max-width: 800px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .image-stack img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .image-stack img:hover {
+            transform: scale(1.02);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .close-btn:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-title">Elin Michielsen</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">homepage</a></li>
+                <li><a href="about me.html">about and contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>drawing stories</h2>
+    <h5>drawings inspired by Yoko Ogawa's story: a pool in the rain and a cafeteria in the evening</h5>
+
+    <section class="image-stack">
+        <!-- Repeat this block for each image -->
+        <a href="#img1"><img src="images/scans drawing stories _1.jpg" alt="Page 1"></a>
+        <a href="#img2"><img src="images/scans drawing stories _2.jpg" alt="Page 2"></a>
+        <a href="#img3"><img src="images/scans drawing stories 2_3.jpg" alt="Page 3"></a>
+       <a href="#img4"><img src="images/scans drawing stories _3 kopie.png" alt="Page 4"></a>
+    </section>
+
+
+    <div id="img1" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="images/scans drawing stories _1.jpg" alt="Page 1"></div>
+    <div id="img2" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="images/drawing stories webdesign 2.jpg" alt="Page 2"></div>
+    <div id="img3" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="images/drawing stories webdesign 3.jpg" alt="Page 3"></div>
+    <div id="img4" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="images/scans drawing stories _3 kopie.png" alt="Page 3"></div>
+</body>
+</html>
+
