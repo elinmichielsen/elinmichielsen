@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elin Michielsen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: rgb(27, 27, 66);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+            gap: 10px;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        .small-image {
+             width: 200px;
+              height: auto;
+        }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-title">Elin Michielsen</div> 
+        <nav>
+            <ul>
+                <li><a href="index.html">homepage</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    <h1> about me !</h1>
+      <section id="work" style="display: flex; gap: 10px; justify-content: center; padding: 20px;">
+  <img src="images/Bloemen schetsboek .jpg" alt="Example 1" class="small-image">
+  <img src="images/Atelier .jpg" alt="Example 2" class="small-image">
+    <img src="images/drawing stories webdesign .jpg" alt="Example 2" class="small-image">
+</section>
+
+    </section>
+   <section id="about-me" style="padding: 40px; max-width: 800px; margin: auto;">
+ 
+  <p>Hello! I'm Elin, an illustrator based in Antwerp. I love exploring different mediums — from sketchbooks and printmaking to digital illustration. </p>
+
+  <p>My work is inspired by everyday moments, my emotions, and intuition. I enjoy experimenting, and try to make pieces that feel personal and meaningful to me.</p>
+
+  <p>Currently i am studying illustration at Sint-Lucas in Antwerp and i am planning to do a masters in the autonomous context next year.</p>
+
+  <p>If you would like to get in touch, feel free to <a href="mailto:elin.michielsen@gmail.com" style="color: inherit;">
+  email me!
+</a>
+
+    
+</body>
+</html>

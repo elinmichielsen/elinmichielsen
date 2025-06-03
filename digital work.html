@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elin Michielsen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #fff;
+            color: rgb(27, 27, 66);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+       .portfolio-grid {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px;
+    padding: 20px;
+    max-width: 600px; /* Optional: keep a consistent width */
+    margin: auto;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        h1{
+            text-align: center;
+        }
+         .portfolio-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .portfolio-item img:hover {
+      transform: scale(1.01);
+    }
+
+    /* Lightbox Styles */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      /* box-shadow removed */
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="site-title">Elin Michielsen</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">homepage</a></li>
+                <li><a href="#about me">about and contact</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+     
+    <h1>digital works</h1>
+    <section id="work" class="portfolio-grid">
+        <section id="work" class="portfolio-grid">
+    <div class="portfolio-item">
+      <a href="#img1"><img src="images/Final_TTT.png" alt="Project 1" /></a>
+    </div>
+    <div class="portfolio-item">
+      <a href="#img2"><img src="images/TTT fish .png" alt="Project 2" /></a>
+    </div>
+    <div class="portfolio-item">
+      <a href="#img3"><img src="images/TTT kaas.png" alt="Project 3" /></a>
+    </div>
+    <div class="portfolio-item">
+      <a href="#img4"><img src="images/editorial.jpg" alt="Project 4" /></a>
+    </div>
+    <div class="portfolio-item">
+      <a href="#img5"><img src="images/editorial 2.jpg" alt="Project 5" /></a>
+    </div>
+    <div class="portfolio-item">
+      <a href="#img6"><img src="images/editorial 3.jpg" alt="Project 6" /></a>
+    </div>
+    </section>
+
+    <div id="img1" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/Final_TTT.png" alt=""></div>
+  <div id="img2" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/TTT fish .png" alt=""></div>
+  <div id="img3" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/TTT kaas.png" alt=""></div>
+  <div id="img4" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/editorial.jpg" alt=""></div>
+  <div id="img5" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/editorial 2.jpg" alt=""></div>
+  <div id="img6" class="lightbox"><a href="#" class="lightbox-close">&times;</a><img src="images/editorial 3.jpg" alt=""></div>
+
+</body>
+</html>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
